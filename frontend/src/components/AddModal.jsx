@@ -32,7 +32,7 @@ function AddModal({ onClose, onAdded, initialType = 'quote' }) {
     }
     
     try {
-      const response = await fetch(`http://localhost:5000${url}`, {
+      const response = await fetch(`https://soothyoursoul.onrender.com${url}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body)

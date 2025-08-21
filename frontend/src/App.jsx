@@ -19,9 +19,9 @@ export default function App() {
   const loadData = async () => {
     try {
       const [quotesRes, prayersRes, storiesRes] = await Promise.all([
-        fetch("http://localhost:5000/api/quotes"),
-        fetch("http://localhost:5000/api/prayers"),
-        fetch("http://localhost:5000/api/stories")
+        fetch("https://soothyoursoul.onrender.com/api/quotes"),
+        fetch("https://soothyoursoul.onrender.com/api/prayers"),
+        fetch("https://soothyoursoul.onrender.com/api/stories")
       ]);
 
       const quotesData = quotesRes.ok ? await quotesRes.json() : [];
